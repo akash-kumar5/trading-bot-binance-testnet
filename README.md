@@ -12,58 +12,109 @@ Features
 
 Setup
 -----
-`git clone cd trading_botpip install -r requirements.txt   `
+```bash
+git clone cd trading_botpip install -r requirements.txt  
+```
 
 Create .env:
-
-Plain 
-`BINANCE_API_KEY=your_keyBINANCE_API_SECRET=your_secret   `
+-----
+```bash 
+BINANCE_API_KEY=your_key
+BINANCE_API_SECRET=your_secret   
+```
 
 Usage
 -----
 ### MARKET
-`   python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.1   `
+```bash   
+python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.1   ```
 
 ### LIMIT
-`   python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.1 --price 70000   `
+```bash
+python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.1 --price 70000  \
+```
 
 Sample Output
 -------------
-### Market order
-``` python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.1
-
-Order Summary:
-Symbol: BTCUSDT
-Side: BUY
-Type: MARKET
-Quantity: 0.1
-Price: None
-
-Order Response:
-Order ID: 13005895509
-Status: FILLED
-Executed Qty: 0.100
-Avg Price: 66678.00000
+### Market order - BUY
 ```
-### Limit Order
+===== ORDER SUMMARY =====
+Symbol   : BTCUSDT
+Side     : BUY
+Type     : MARKET
+Quantity : 0.1
+Price    : Market
+
+===== ORDER RESPONSE =====
+Order ID     : 13006325187
+Status       : FILLED
+Executed Qty : 0.100
+Avg Price    : 66573.40000
+
+===== STATUS =====
+Order executed successfully
 ```
-python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.1 --price 66678   
 
-Order Summary:
-Symbol: BTCUSDT
-Side: SELL
-Type: LIMIT
-Quantity: 0.1
-Price: 66678.0
+### Market Order - SELL
+```
+===== ORDER SUMMARY =====
+Symbol   : BTCUSDT
+Side     : SELL
+Type     : MARKET
+Quantity : 0.1
+Price    : Market
 
-Order Response:
-Order ID: 13006139783
-Status: NEW
-Executed Qty: 0.000
-Avg Price: 0.00
+===== ORDER RESPONSE =====
+Order ID     : 13006338901
+Status       : FILLED
+Executed Qty : 0.100
+Avg Price    : 66552.60000
 
- Order placed successfully
- Order is open and waiting to be filled
+===== STATUS =====
+Order executed successfully
+```
+
+### Limit Order - BUY
+```
+===== ORDER SUMMARY =====
+Symbol   : BTCUSDT
+Side     : BUY
+Type     : LIMIT
+Quantity : 0.1
+Price    : 60000.0
+
+===== ORDER RESPONSE =====
+Order ID     : 13006340561
+Status       : NEW
+Executed Qty : 0.000
+Avg Price    : 0.00
+
+===== STATUS =====
+Order placed and waiting in order book
+```
+### Limit Order - SELL
+``` 
+===== ORDER SUMMARY =====
+Symbol   : BTCUSDT
+Side     : SELL
+Type     : LIMIT
+Quantity : 0.1
+Price    : 70000.0
+
+===== ORDER RESPONSE =====
+Order ID     : 13006342009
+Status       : NEW
+Executed Qty : 0.000
+Avg Price    : 0.00
+
+===== STATUS =====
+Order placed and waiting in order book
+ ```
+
+Logs
+----
+```
+logs/trading.log
 ```
 
 Assumptions
