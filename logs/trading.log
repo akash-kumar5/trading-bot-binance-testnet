@@ -1,68 +1,8 @@
-2026-03-29 14:15:42,860 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'price': None}
-2026-03-29 14:15:43,808 - ERROR - Error: APIError(code=-2015): Invalid API-key, IP, or permissions for action
-Traceback (most recent call last):
-  File "D:\Projects\PythonAIAss\cli.py", line 24, in main
-    response = create_order(
-               ^^^^^^^^^^^^^
-  File "D:\Projects\PythonAIAss\bot\orders.py", line 17, in create_order
-    return client.place_order(**params)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Projects\PythonAIAss\bot\client.py", line 21, in place_order
-    return self.client.futures_create_order(**params)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Projects\PythonAIAss\.venv\Lib\site-packages\binance\client.py", line 7951, in futures_create_order
-    return self._request_futures_api("post", "order", True, data=params)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Projects\PythonAIAss\.venv\Lib\site-packages\binance\client.py", line 144, in _request_futures_api
-    return self._request(method, uri, signed, force_params, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Projects\PythonAIAss\.venv\Lib\site-packages\binance\client.py", line 107, in _request
-    return self._handle_response(self.response)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Projects\PythonAIAss\.venv\Lib\site-packages\binance\client.py", line 116, in _handle_response
-    raise BinanceAPIException(response, response.status_code, response.text)
-binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action
-2026-03-29 14:17:29,818 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'price': None}
-2026-03-29 14:17:30,586 - ERROR - Error: APIError(code=-4164): Order's notional must be no smaller than 100 (unless you choose reduce only).
-Traceback (most recent call last):
-  File "D:\Projects\PythonAIAss\cli.py", line 24, in main
-    response = create_order(
-               ^^^^^^^^^^^^^
-  File "D:\Projects\PythonAIAss\bot\orders.py", line 17, in create_order
-    return client.place_order(**params)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Projects\PythonAIAss\bot\client.py", line 21, in place_order
-    return self.client.futures_create_order(**params)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Projects\PythonAIAss\.venv\Lib\site-packages\binance\client.py", line 7951, in futures_create_order
-    return self._request_futures_api("post", "order", True, data=params)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Projects\PythonAIAss\.venv\Lib\site-packages\binance\client.py", line 144, in _request_futures_api
-    return self._request(method, uri, signed, force_params, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Projects\PythonAIAss\.venv\Lib\site-packages\binance\client.py", line 107, in _request
-    return self._handle_response(self.response)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\Projects\PythonAIAss\.venv\Lib\site-packages\binance\client.py", line 116, in _handle_response
-    raise BinanceAPIException(response, response.status_code, response.text)
-binance.exceptions.BinanceAPIException: APIError(code=-4164): Order's notional must be no smaller than 100 (unless you choose reduce only).
-2026-03-29 14:19:41,599 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.1, 'price': None}
-2026-03-29 14:19:42,559 - INFO - Response: {'orderId': 13005886667, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJfb36d47dd91abb9e05556c', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1774774182336}
-2026-03-29 14:20:49,567 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.1, 'price': None}
-2026-03-29 14:20:50,631 - INFO - Response: {'orderId': 13005888556, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ47992635e86ccbdb3d5349', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1774774250417}
-2026-03-29 14:24:41,127 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.1, 'price': None}
-2026-03-29 14:24:43,306 - INFO - Response: {'orderId': 13005895509, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-Cb7ytekJb86198c6659fbfd91f8953', 'price': '0.00', 'avgPrice': '66678.00000', 'origQty': '0.100', 'executedQty': '0.100', 'cumQuote': '6667.80000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'time': 1774774481833, 'updateTime': 1774774481833}
-2026-03-29 14:25:16,664 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.1, 'price': 70000.0}
-2026-03-29 14:25:18,919 - INFO - Response: {'orderId': 13005896306, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ57b6243345cb244d36a62c', 'price': '70000.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'time': 1774774517462, 'updateTime': 1774774517462}
-2026-03-29 15:07:11,397 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.1, 'price': 666666.0}
-2026-03-29 15:07:13,524 - INFO - Response: {'orderId': 13006135974, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ807102d28f29ce4e63cf62', 'price': '666666.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'time': 1774777032146, 'updateTime': 1774777032146}
-2026-03-29 15:07:35,774 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.1, 'price': 66678.0}
-2026-03-29 15:07:38,447 - INFO - Response: {'orderId': 13006139783, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJa28ab8fab7edaf49aea8c', 'price': '66678.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'time': 1774777056880, 'updateTime': 1774777056880}
-2026-03-29 15:24:58,820 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.1, 'price': None}
-2026-03-29 15:25:00,931 - INFO - Response: {'orderId': 13006325187, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-Cb7ytekJ68bb5344f17a7490e40381', 'price': '0.00', 'avgPrice': '66573.40000', 'origQty': '0.100', 'executedQty': '0.100', 'cumQuote': '6657.34000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'time': 1774778099529, 'updateTime': 1774778099529}
-2026-03-29 15:31:51,521 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.1, 'price': None}
-2026-03-29 15:31:53,645 - INFO - Response: {'orderId': 13006338901, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-Cb7ytekJ6a813289ca2f50f27a40c1', 'price': '0.00', 'avgPrice': '66552.60000', 'origQty': '0.100', 'executedQty': '0.100', 'cumQuote': '6655.26000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'time': 1774778512335, 'updateTime': 1774778512335}
-2026-03-29 15:32:32,866 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.1, 'price': 60000.0}
-2026-03-29 15:32:35,076 - INFO - Response: {'orderId': 13006340561, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ22d4a1ea09b84abac1abee', 'price': '60000.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'time': 1774778553645, 'updateTime': 1774778553645}
-2026-03-29 15:33:03,105 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.1, 'price': 70000.0}
-2026-03-29 15:33:05,125 - INFO - Response: {'orderId': 13006342009, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJf41e827d74be8808e9999d', 'price': '70000.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'time': 1774778583814, 'updateTime': 1774778583814}
+2026-03-29 16:17:18,331 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.1, 'price': None}
+2026-03-29 16:17:20,534 - INFO - Response: {'orderId': 13006415390, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-Cb7ytekJ2a1a6d3b9a74832854d322', 'price': '0.00', 'avgPrice': '66502.17600', 'origQty': '0.100', 'executedQty': '0.100', 'cumQuote': '6650.21760', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'time': 1774781239120, 'updateTime': 1774781239120}
+2026-03-29 16:17:34,554 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.1, 'price': None}
+2026-03-29 16:17:36,721 - INFO - Response: {'orderId': 13006415681, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-Cb7ytekJeb959308fe137605eed84', 'price': '0.00', 'avgPrice': '66488.20200', 'origQty': '0.100', 'executedQty': '0.100', 'cumQuote': '6648.82020', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'time': 1774781255370, 'updateTime': 1774781255370}
+2026-03-29 16:17:48,275 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.1, 'price': 60000.0}
+2026-03-29 16:17:50,291 - INFO - Response: {'orderId': 13006415907, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ9d1349dcc1dea421477811', 'price': '60000.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'time': 1774781269046, 'updateTime': 1774781269046}
+2026-03-29 16:18:00,109 - INFO - Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.1, 'price': 70000.0}
+2026-03-29 16:18:02,253 - INFO - Response: {'orderId': 13006416146, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ225aef12dd26499cb2ef', 'price': '70000.00', 'avgPrice': '0.00', 'origQty': '0.100', 'executedQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'time': 1774781280988, 'updateTime': 1774781280988}
