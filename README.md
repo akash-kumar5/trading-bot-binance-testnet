@@ -1,4 +1,6 @@
 # Binance Futures Testnet Trading Bot
+A CLI-based trading bot that places market and limit orders on Binance Futures Testnet with proper validation, logging, and error handling.
+
 
 Features
 --------
