@@ -1,4 +1,4 @@
-**Binance Futures Testnet Trading Bot**
+# Binance Futures Testnet Trading Bot
 
 Features
 --------
@@ -29,6 +29,7 @@ Usage
 
 Sample Output
 -------------
+### Market order
 ``` python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.1
 
 Order Summary:
@@ -43,6 +44,26 @@ Order ID: 13005895509
 Status: FILLED
 Executed Qty: 0.100
 Avg Price: 66678.00000
+```
+### Limit Order
+```
+python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.1 --price 66678   
+
+Order Summary:
+Symbol: BTCUSDT
+Side: SELL
+Type: LIMIT
+Quantity: 0.1
+Price: 66678.0
+
+Order Response:
+Order ID: 13006139783
+Status: NEW
+Executed Qty: 0.000
+Avg Price: 0.00
+
+ Order placed successfully
+ Order is open and waiting to be filled
 ```
 
 Assumptions
