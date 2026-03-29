@@ -15,7 +15,8 @@ Setup
 
 ### 1\. Clone the repository
 ```bash
-   git clone https://github.com//trading-bot-binance-testnet.gitcd trading_bot   
+   git clone https://github.com//trading-bot-binance-testnet.git
+   cd trading-bot-binance-testnet   
    ```
 
 ### 2\. Create virtual environment (recommended)
@@ -158,4 +159,4 @@ Assumptions
 *   Minimum notional ≈ 100 USDT
 
 
-made by Akash.
+Author : Akash Kumar
